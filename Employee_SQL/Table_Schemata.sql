@@ -47,12 +47,12 @@ CREATE TABLE dept_manager (
 );
 
 -- Import each CSV file into its corresponding SQL table
-COPY titles FROM 'C:\Users\Jackie\Desktop\KU Data Analytics Bootcamp\Challenges\SQL-Challenge\data\titles.csv' DELIMITER ',' CSV HEADER;
-COPY employees FROM 'C:\Users\Jackie\Desktop\KU Data Analytics Bootcamp\Challenges\SQL-Challenge\data\employees.csv' DELIMITER ',' CSV HEADER;
-COPY departments FROM 'C:\Users\Jackie\Desktop\KU Data Analytics Bootcamp\Challenges\SQL-Challenge\data\departments.csv' DELIMITER ',' CSV HEADER;
-COPY dept_emp FROM 'C:\Users\Jackie\Desktop\KU Data Analytics Bootcamp\Challenges\SQL-Challenge\data\dept_emp.csv' DELIMITER ',' CSV HEADER;
-COPY salaries FROM 'C:\Users\Jackie\Desktop\KU Data Analytics Bootcamp\Challenges\SQL-Challenge\data\salaries.csv' DELIMITER ',' CSV HEADER;
-COPY dept_manager FROM 'C:\Users\Jackie\Desktop\KU Data Analytics Bootcamp\Challenges\SQL-Challenge\data\dept_manager.csv' DELIMITER ',' CSV HEADER;
+COPY titles FROM 'C:\Users\Jackie\Desktop\KU Data Analytics Bootcamp\Challenges\SQL-Challenge\Data\titles.csv' DELIMITER ',' CSV HEADER;
+COPY employees FROM 'C:\Users\Jackie\Desktop\KU Data Analytics Bootcamp\Challenges\SQL-Challenge\Data\employees.csv' DELIMITER ',' CSV HEADER;
+COPY departments FROM 'C:\Users\Jackie\Desktop\KU Data Analytics Bootcamp\Challenges\SQL-Challenge\Data\departments.csv' DELIMITER ',' CSV HEADER;
+COPY dept_emp FROM 'C:\Users\Jackie\Desktop\KU Data Analytics Bootcamp\Challenges\SQL-Challenge\Data\dept_emp.csv' DELIMITER ',' CSV HEADER;
+COPY salaries FROM 'C:\Users\Jackie\Desktop\KU Data Analytics Bootcamp\Challenges\SQL-Challenge\Data\salaries.csv' DELIMITER ',' CSV HEADER;
+COPY dept_manager FROM 'C:\Users\Jackie\Desktop\KU Data Analytics Bootcamp\Challenges\SQL-Challenge\Data\dept_manager.csv' DELIMITER ',' CSV HEADER;
 
 -- Display tables with imported data to confirm accurate creation and import
 SELECT *
