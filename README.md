@@ -1,81 +1,74 @@
-# SQL-Challenge
+# SQL Challenge - Pewlett Hackard Data Analysis
 
-Background
+## Background
+Welcome to Pewlett Hackard, a fictional company! As a newly hired data engineer, your primary task is to conduct a research project focusing on the employees hired during the 1980s and 1990s. The available data for this project is stored in six CSV files.
 
-It’s been two weeks since you were hired as a new data engineer at Pewlett Hackard (a fictional company). Your first major task is to do a research project about people whom the company employed during the 1980s and 1990s. All that remains of the employee database from that period are six CSV files.
+## Getting Started
+1. **Create Repository:** Start by creating a new repository named `sql-challenge`. Do not add this assignment to an existing repository.
 
-For this project, you’ll design the tables to hold the data from the CSV files, import the CSV files into a SQL database, and then answer questions about the data. That is, you’ll perform data modeling, data engineering, and data analysis, respectively.
-Before You Begin
+2. **Clone Repository:** Clone the newly created repository to your local machine.
 
-    Create a new repository for this project called sql-challenge. Do not add this assignment to an existing repository.
+3. **Directory Setup:** Inside your local Git repository, create a directory for this challenge. Use a folder name corresponding to the challenge, such as `EmployeeSQL`.
 
-    Clone the new repository to your computer.
+4. **Download Files:** Download the required files .
 
-    Inside your local Git repository, create a directory for this Challenge. Use a folder name that corresponds to the Challenge, such as EmployeeSQL.
+## Challenge Overview
+This challenge is divided into three parts: data modeling, data engineering, and data analysis.
 
-    Note that you’ll add your files to this folder and push the changes to GitHub.
+### Data Modeling
+- Inspect the CSV files and create an Entity Relationship Diagram (ERD) using a tool like QuickDBD.
+- Provide table schemas for all tables based on the ERD.
 
-This Challenge is divided into three parts: data modeling, data engineering, and data analysis.
+### Data Engineering
+- Create table schemas for each CSV file, specifying data types, primary keys, foreign keys, and constraints.
+- Import each CSV file into its corresponding SQL table.
 
-Data Modeling
+### Data Analysis
+1. **List Employee Information:**
+   - Employee number, last name, first name, sex, and salary of each employee.
 
-Inspect the CSV files, and then sketch an Entity Relationship Diagram of the tables. To create the sketch, feel free to use a tool like QuickDBD
+2. **Employees Hired in 1986:**
+   - First name, last name, and hire date for employees hired in 1986.
 
-Data Engineering
+3. **Department Managers:**
+   - Manager details for each department, including department number, department name, employee number, last name, and first name.
 
-    Use the provided information to create a table schema for each of the six CSV files. Be sure to do the following:
+4. **Employee Department Information:**
+   - Department number for each employee, along with employee number, last name, first name, and department name.
 
-        Remember to specify the data types, primary keys, foreign keys, and other constraints.
+5. **Specific Employee Details:**
+   - First name, last name, and sex of employees named Hercules with a last name starting with the letter B.
 
-        For the primary keys, verify that the column is unique. Otherwise, create a composite key 
+6. **Employees in the Sales Department:**
+   - Employee number, last name, and first name for each employee in the Sales department.
 
-        Links to an external site., which takes two primary keys to uniquely identify a row.
+7. **Employees in Sales and Development:**
+   - Employee number, last name, first name, and department name for employees in Sales and Development.
 
-        Be sure to create the tables in the correct order to handle the foreign keys.
+8. **Employee Last Name Frequency:**
+   - Frequency counts, in descending order, of all employee last names.
 
-    Import each CSV file into its corresponding SQL table.
+## Requirements and Scoring
 
-Data Analysis
+### Data Modeling (10 points)
+- Include an Entity Relationship Diagram or provide table schemas for all tables (10 points).
 
-    List the employee number, last name, first name, sex, and salary of each employee.
+### Data Engineering (70 points)
+- Define all required columns for each table (10 points).
+- Set columns to the correct data type (10 points).
+- Establish primary keys for each table (10 points).
+- Ensure correct referencing of related tables (10 points).
+- Establish correct relationships using Foreign Keys (10 points).
+- Use the NOT NULL condition correctly on necessary columns (10 points).
+- Accurately define value length for columns (10 points).
 
-    List the first name, last name, and hire date for the employees who were hired in 1986.
-
-    List the manager of each department along with their department number, department name, employee number, last name, and first name.
-
-    List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
-
-    List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
-
-    List each employee in the Sales department, including their employee number, last name, and first name.
-
-    List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
-
-    List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
-
-Requirements
-Data Modeling (10 points)
-
-    Entity Relationship Diagram is included or table schemas provided for all tables (10 points)
-
-Data Engineering (70 points)
-
-    All required columns are defined for each table (10 points)
-    Columns are set to the correct data type (10 points)
-    Primary Keys set for each table (10 points)
-    Correctly references related tables (10 points)
-    Tables are correctly related using Foreign Keys (10 points)
-    Correctly uses NOT NULL condition on necessary columns (10 points)
-    Accurately defines value length for columns (10 points)
-
-Data Analysis (20 points)
-
-    List the employee number, last name, first name, sex, and salary of each employee (2 points)
-    List the first name, last name, and hire date for the employees who were hired in 1986 (2 points)
-    List the manager of each department along with their department number, department name, employee number, last name, and first name (2 points)
-    List the department number for each employee along with that employee’s employee number, last name, first name, and department name (2 points)
-    List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B (2 points)
-    List each employee in the Sales department, including their employee number, last name, and first name (2 points)
-    List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name (4 points)
-    List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name) (4 points)
-
+### Data Analysis (20 points)
+- Fulfill all data analysis requirements (2 points each).
+- List employee number, last name, first name, sex, and salary.
+- List employees hired in 1986.
+- List department managers.
+- List employee department information.
+- List specific employee details.
+- List employees in the Sales department.
+- List employees in Sales and Development.
+- List employee last name frequency.
